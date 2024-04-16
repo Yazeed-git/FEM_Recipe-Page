@@ -1,0 +1,210 @@
+/* General styles */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+@font-face {
+    font-family: young-serif;
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: outfit;
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+
+li{
+    font-weight: 400;
+}
+
+
+
+p,ul,li,h3,strong,table{
+    font-family: outfit, Arial, Helvetica, sans-serif;
+    
+}
+
+p,li,strong,table{
+    color: #5f574e;
+}
+
+h1,h2{
+    font-family: young-serif, Arial, Helvetica, sans-serif;
+    
+}
+
+h2{
+    font-family: young-serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #854632;
+}
+
+/* body{
+    font: ;
+} */
+
+.list{
+    padding: 0 1.3em;
+}
+
+.list-items{
+    margin-bottom: 0.5em;
+    padding-left: 0.75em;
+
+}
+
+.ing-section .list-items::marker, .ins-section .list-items::marker{
+    color: #854632;
+    font-weight: bold;
+}
+
+.prep-section li::marker, .ing-section li::marker{
+    font-size: 12px;
+
+}
+
+h2,h3{
+    margin-bottom: 0.3em;
+}
+
+h3{
+    font-size: 1.1rem;
+    color: #7b284f;
+}
+
+
+
+.featured-img{
+    max-width: 100%;
+    height: 220px;
+    background-image: url('../assets/images/image-omelette.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container{
+    padding: 0 2em;
+}
+
+.heading-section{
+    padding: 2em 0;
+
+}
+.main-heading{
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    padding-right: 1.5em;
+}
+
+.main-heading_desc{
+    padding-right: 6.4em;
+    /* border: 2px solid salmon; */
+
+}
+
+/* -------- prep time section --------- */
+
+.prep-section{
+    padding: 1em 1.5em;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+
+/* -------- ingredients section --------- */
+
+.ing-section, .ins-section, .nut-section{
+    padding: 2em 0;
+    border-bottom: 1px solid #e4ded8;
+}
+
+/* -------- nutrition section --------- */
+
+.nut-section{
+    /* padding: 1em; */
+    border: none;
+
+}
+
+.nut-section p{
+    margin-bottom: 1.5em;
+}
+
+.nut-section table{
+    /* border: 2px solid red; */
+    padding: 0 1.5em 0 1.5em;
+    width: 100%;
+}
+
+.nut-section table tr td{
+    /* background: yellow; */
+    padding: 1em;
+    border-bottom: 1px solid #e4ded8;
+}
+
+.nut-section table tr .td_nbb{
+    border-bottom: none;
+}
+
+.nut-section table tr .td_bold{
+    font-weight: bold;
+    color: #7b284f;
+}
+
+.nut-section table tr .td_r{
+    padding-left: 5em;
+    /* background: pink; */
+}
+
+
+/* --  Responsive markup for larger screens -- */
+@media screen and (max-width: 375px){
+    /* .heading-section{
+        padding-top: 0;
+    } */
+    .featured-img{
+        height: 150px;
+    }
+    .main-heading{
+        padding-right: 0;
+        font-size: 1.7rem;
+    }
+    .main-heading_desc{
+        padding-right: 0;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    body{
+        background: hsl(30, 54%, 90%);
+        padding: 4em 0;
+    }
+    main{
+        background-color: #fff;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 2em 0;
+        border-radius: 14px;
+    }
+    .container{
+        background: #fff;
+    }
+    .featured-img{
+        height: 278px;
+        margin: 0 5%;
+        border-radius: 8px;
+    } 
+    .nut-section table{
+        padding: 0;
+    }
+
+}
